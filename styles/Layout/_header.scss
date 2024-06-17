@@ -1,0 +1,36 @@
+@use "../globals" as *;
+
+.header__menuMobile {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    & > span {
+        background-color: $cBlack;
+        width: 35px;
+        height: 3px;
+        display: block; //spanはインラインなのでblockに設定する
+        margin-bottom: 9px;
+        transition: transform 0.5s;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.header__menuOpen {
+    & .header__menuMobile {
+        & > span {
+            &:nth-child(1) {
+                transform: translateY(12px) rotate(135deg);
+            }
+            &:nth-child(2) {
+                visibility: hidden;
+            }
+            &:nth-child(3) {
+                transform: translateY(-12px) rotate(-135deg);
+            }
+        }
+    }
+}

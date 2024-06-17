@@ -5,13 +5,49 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Portfolio de Sayaka</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&family=Noto+Sans+JP:wght@500&display=swap"
+			rel="stylesheet">
+
+		<link rel="stylesheet" href="./styles/style.css">
 	</head>
 
 	<body>
-		<div id="container">
-			<button class="btn">Button</button>
+		<div class="loader">
+			<div class="loader__bloc">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
 		</div>
+
+		<div id="container">
+			<header class="header">
+				<button class="header__menuMobile"
+					onclick="document.querySelector('body').classList.toggle('header__menuOpen')">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</header>
+			<main>
+				<div class="coverSlide hoverDarken inview ">
+					<img src="img/sea.jpg" alt="" class="imgZoom">
+				</div>
+				<div class="container__text">
+					<h1 class="textAnimationName"></h1>
+					<p class="textAnimation"></p>
+				</div>
+
+				<button class="btn slid-bg">Button</button>
+			</main>
+		</div>
+		<script src="./main.js"></script>
 	</body>
 
 </html>

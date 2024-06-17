@@ -1,0 +1,16 @@
+// variable
+
+$colorPrimary: #9356dc;
+$colorSecondary: #ff79da;
+$colorTertiary: #99e2d0;
+$colorPrimaryLight: lighten($colorPrimary, 33%);
+$colorTertiarydark: darken($colorTertiary, 50%);
+$color1: black;
+$color1light: lighten($color1, 20%);
+$color2: #fff;
+$color3: #f2f2f2;
+$color3dark: darken($color3, 5%);
+$color3darkmore: darken($color3, 20%);
+$colorGradient: linear-gradient($colorSecondary, $colorPrimary);
+$cWhite: white;
+$cBlack: black;

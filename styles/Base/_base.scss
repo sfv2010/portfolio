@@ -1,0 +1,29 @@
+@use "../globals" as *;
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 100%;
+    // font-family: "Roboto", sans-serif;
+}
+a {
+    text-decoration: none;
+    color: $cBlack;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+li {
+    list-style: none;
+}
+body {
+    font-family: "Lusitana", "Times New Roman", "Noto Sans JP", sans-serif;
+}

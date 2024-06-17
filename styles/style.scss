@@ -1,0 +1,9 @@
+// @use "loader" as *;
+
+@use "Layout/header";
+@use "Layout/loader";
+@use "Layout/slider";
+
+@use "Pages/main";
+@use "Utils/animations";
+@use "Base/base";
