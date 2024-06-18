@@ -1,19 +1,34 @@
 @use "../globals" as *;
-#container {
+#globalContainer {
     text-align: center;
 }
-.container__text {
-    margin: 10%;
+#container {
+    position: relative;
+    height: 100vh;
+    z-index: 2;
+    transition: all 0.5s;
 }
+
 .textAnimationName {
     font-weight: 700;
+    font-size: 2.2rem;
     letter-spacing: 0.05em;
 }
 .textAnimation {
     display: none;
     letter-spacing: 0.05em;
-    font-size: larger;
-    margin-top: 1%;
+    font-size: 1.3rem;
+    margin-top: 10%;
+}
+.mainTitle {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.subTitle {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .btn {
@@ -50,3 +65,46 @@
         }
     }
 }
+
+.main {
+    &__img {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.5);
+            pointer-events: none;
+        }
+    }
+    &__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        color: $cWhite;
+    }
+    &__burner {
+        width: 100%;
+    }
+}
+
+// .burner {
+//     height: 100vh;
+//     background-image: url("../../img/madosa.jpg");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     position: relative;
+// }
