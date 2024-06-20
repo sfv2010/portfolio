@@ -11,7 +11,6 @@
 }
 html {
     font-size: 100%;
-    // font-family: "Roboto", sans-serif;
 }
 a {
     text-decoration: none;
@@ -26,4 +25,93 @@ li {
 }
 body {
     font-family: "Lusitana", "Times New Roman", "Noto Sans JP", sans-serif;
+}
+
+// font
+.font-sm {
+    font-size: 10px;
+    @include mq(sm) {
+        font-size: 12px;
+    }
+    @include mq(md) {
+        font-size: 15px;
+    }
+    @include mq(lg) {
+        font-size: 19px;
+    }
+}
+.font-md {
+    font-size: 14px;
+    @include mq(sm) {
+        font-size: 16px;
+    }
+    @include mq(md) {
+        font-size: 17px;
+    }
+    @include mq(lg) {
+        font-size: 19px;
+    }
+    letter-spacing: 0.03em;
+    line-height: 1.5;
+}
+.font-lr {
+    font-size: 17px;
+
+    @include mq(lg) {
+        font-size: 23px;
+    }
+}
+.font-lg {
+    font-size: 25px;
+
+    @include mq(lg) {
+        font-size: 36px;
+    }
+}
+
+// .main-title {
+//     @extend .font-lg;
+//     font-weight: 600;
+//     margin-bottom: 0;
+//     display: block;
+// }
+
+// .sub-title {
+//     @extend .font-sm;
+//     @extend .mb-sm;
+//
+
+.content-width {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    @include mq(md) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.mb-sm {
+    margin-bottom: 16px;
+}
+
+.mb-lg {
+    margin-bottom: 80px;
+    @include mq(lg) {
+        margin-bottom: 150px;
+    }
+}
+
+.pb-sm {
+    padding-bottom: 16px;
+}
+.pb-lg {
+    padding-bottom: 80px;
+    @include mq(lg) {
+        padding-bottom: 150px;
+    }
 }

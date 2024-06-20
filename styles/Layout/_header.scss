@@ -7,24 +7,6 @@
     justify-content: flex-end;
     align-items: center;
 }
-.menuMobile__btn {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-
-    & > span {
-        background-color: $cBlack;
-        width: 35px;
-        height: 3px;
-        display: block; //spanはインラインなのでblockに設定する
-        margin-bottom: 9px;
-        transition: transform 0.5s;
-
-        &:last-child {
-            margin-bottom: 0px;
-        }
-    }
-}
 
 .header__menuOpen {
     & #container {
@@ -92,5 +74,24 @@
         display: block;
         margin-top: 30px;
         color: $cBlack;
+    }
+    &__btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-right: 10px;
+
+        & > span {
+            background-color: $cBlack;
+            width: 35px;
+            height: 3px;
+            display: block; //spanはインラインなのでblockに設定する
+            margin-bottom: 9px;
+            transition: transform 0.5s;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
     }
 }

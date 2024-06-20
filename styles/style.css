@@ -6,23 +6,6 @@
   align-items: center;
 }
 
-.menuMobile__btn {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-.menuMobile__btn > span {
-  background-color: black;
-  width: 35px;
-  height: 3px;
-  display: block;
-  margin-bottom: 9px;
-  transition: transform 0.5s;
-}
-.menuMobile__btn > span:last-child {
-  margin-bottom: 0px;
-}
-
 .header__menuOpen #container {
   transform: translate(-150px, 60px);
   box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
@@ -86,6 +69,23 @@
   margin-top: 30px;
   color: black;
 }
+.menuMobile__btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.menuMobile__btn > span {
+  background-color: black;
+  width: 35px;
+  height: 3px;
+  display: block;
+  margin-bottom: 9px;
+  transition: transform 0.5s;
+}
+.menuMobile__btn > span:last-child {
+  margin-bottom: 0px;
+}
 
 .loader {
   position: fixed;
@@ -148,13 +148,13 @@
   animation-delay: -1.9s;
 }
 .loader__bloc > div:nth-child(-n+2) {
-  background-color: #9356dc;
+  background-color: #884898;
 }
 .loader__bloc > div:nth-child(n+3) {
-  background-color: #ff79da;
+  background-color: #a2aad4;
 }
 .loader__bloc > div:nth-child(n+5) {
-  background-color: #99e2d0;
+  background-color: #be9fb2;
 }
 
 .coverSlide {
@@ -234,15 +234,44 @@ img {
 
 .textAnimationName {
   font-weight: 700;
-  font-size: 2.2rem;
+  font-size: 16px;
   letter-spacing: 0.05em;
+}
+@media screen and (min-width: 480px) {
+  .textAnimationName {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .textAnimationName {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .textAnimationName {
+    font-size: 36px;
+  }
 }
 
 .textAnimation {
-  display: none;
   letter-spacing: 0.05em;
-  font-size: 1.3rem;
-  margin-top: 10%;
+  font-size: 11px;
+  margin: 4% 0 6%;
+}
+@media screen and (min-width: 480px) {
+  .textAnimation {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .textAnimation {
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .textAnimation {
+    font-size: 21px;
+  }
 }
 
 .mainTitle {
@@ -254,6 +283,12 @@ img {
   display: block;
   font-size: 14px;
   font-weight: 400;
+}
+
+.p {
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
 }
 
 .btn {
@@ -312,8 +347,20 @@ img {
   z-index: 2;
   color: white;
 }
+.main__p {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: whitesmoke;
+  letter-spacing: 0.05em;
+}
 .main__burner {
   width: 100%;
+}
+.main__about {
+  text-align: left;
 }
 
 @keyframes loader {
@@ -401,4 +448,105 @@ li {
 
 body {
   font-family: "Lusitana", "Times New Roman", "Noto Sans JP", sans-serif;
+}
+
+.font-sm {
+  font-size: 10px;
+}
+@media screen and (min-width: 480px) {
+  .font-sm {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .font-sm {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .font-sm {
+    font-size: 19px;
+  }
+}
+
+.font-md {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+}
+@media screen and (min-width: 480px) {
+  .font-md {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .font-md {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .font-md {
+    font-size: 19px;
+  }
+}
+
+.font-lr {
+  font-size: 17px;
+}
+@media screen and (min-width: 960px) {
+  .font-lr {
+    font-size: 23px;
+  }
+}
+
+.font-lg {
+  font-size: 25px;
+}
+@media screen and (min-width: 960px) {
+  .font-lg {
+    font-size: 36px;
+  }
+}
+
+.content-width {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 600px) {
+  .flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.mb-sm {
+  margin-bottom: 16px;
+}
+
+.mb-lg {
+  margin-bottom: 80px;
+}
+@media screen and (min-width: 960px) {
+  .mb-lg {
+    margin-bottom: 150px;
+  }
+}
+
+.pb-sm {
+  padding-bottom: 16px;
+}
+
+.pb-lg {
+  padding-bottom: 80px;
+}
+@media screen and (min-width: 960px) {
+  .pb-lg {
+    padding-bottom: 150px;
+  }
 }/*# sourceMappingURL=style.css.map */

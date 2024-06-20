@@ -11,14 +11,31 @@
 
 .textAnimationName {
     font-weight: 700;
-    font-size: 2.2rem;
+    font-size: 16px;
+    @include mq(sm) {
+        font-size: 20px;
+    }
     letter-spacing: 0.05em;
+    @include mq(md) {
+        font-size: 30px;
+    }
+    @include mq(lg) {
+        font-size: 36px;
+    }
 }
 .textAnimation {
-    display: none;
     letter-spacing: 0.05em;
-    font-size: 1.3rem;
-    margin-top: 10%;
+    font-size: 11px;
+    margin: 4% 0 6%;
+    @include mq(sm) {
+        font-size: 14px;
+    }
+    @include mq(md) {
+        font-size: 19px;
+    }
+    @include mq(lg) {
+        font-size: 21px;
+    }
 }
 .mainTitle {
     font-weight: 600;
@@ -29,6 +46,11 @@
     display: block;
     font-size: 14px;
     font-weight: 400;
+}
+.p {
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
 }
 
 .btn {
@@ -91,8 +113,22 @@
         z-index: 2;
         color: $cWhite;
     }
+    &__p {
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        color: whitesmoke;
+        letter-spacing: 0.05em;
+    }
     &__burner {
         width: 100%;
+    }
+    &__about {
+        text-align: left;
     }
 }
 
