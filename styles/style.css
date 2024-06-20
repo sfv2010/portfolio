@@ -169,7 +169,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: orange;
+  background-color: rgba(0, 61, 125, 0.1);
   opacity: 0;
 }
 .coverSlide.inview::after {
@@ -274,17 +274,6 @@ img {
   }
 }
 
-.mainTitle {
-  font-weight: 600;
-  font-size: 25px;
-}
-
-.subTitle {
-  display: block;
-  font-size: 14px;
-  font-weight: 400;
-}
-
 .p {
   font-size: 1.1rem;
   letter-spacing: 0.05em;
@@ -359,8 +348,18 @@ img {
 .main__burner {
   width: 100%;
 }
-.main__about {
+
+.about,
+.works {
   text-align: left;
+}
+
+.works__item {
+  flex-basis: 48%;
+}
+.works__title {
+  color: red;
+  margin: 5px 0;
 }
 
 @keyframes loader {
@@ -416,6 +415,16 @@ img {
     opacity: 1;
   }
 }
+@keyframes animate-chars {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 *,
 *:before,
 *:after {
@@ -469,23 +478,23 @@ body {
   }
 }
 
-.font-md {
+.font-md, .sub-title {
   font-size: 14px;
   letter-spacing: 0.03em;
   line-height: 1.5;
 }
 @media screen and (min-width: 480px) {
-  .font-md {
+  .font-md, .sub-title {
     font-size: 16px;
   }
 }
 @media screen and (min-width: 600px) {
-  .font-md {
+  .font-md, .sub-title {
     font-size: 17px;
   }
 }
 @media screen and (min-width: 960px) {
-  .font-md {
+  .font-md, .sub-title {
     font-size: 19px;
   }
 }
@@ -499,13 +508,23 @@ body {
   }
 }
 
-.font-lg {
+.font-lg, .main-title {
   font-size: 25px;
 }
 @media screen and (min-width: 960px) {
-  .font-lg {
-    font-size: 36px;
+  .font-lg, .main-title {
+    font-size: 30px;
   }
+}
+
+.main-title {
+  font-weight: 600;
+  display: block;
+}
+
+.sub-title {
+  font-weight: 400;
+  display: block;
 }
 
 .content-width {
@@ -522,11 +541,26 @@ body {
   .flex {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
 .mb-sm {
   margin-bottom: 16px;
+}
+
+.mb-md {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 600px) {
+  .mb-md {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .mb-md {
+    margin-bottom: 60px;
+  }
 }
 
 .mb-lg {

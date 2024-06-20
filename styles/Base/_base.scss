@@ -65,21 +65,21 @@ body {
     font-size: 25px;
 
     @include mq(lg) {
-        font-size: 36px;
+        font-size: 30px;
     }
 }
 
-// .main-title {
-//     @extend .font-lg;
-//     font-weight: 600;
-//     margin-bottom: 0;
-//     display: block;
-// }
+.main-title {
+    @extend .font-lg;
+    font-weight: 600;
+    display: block;
+}
 
-// .sub-title {
-//     @extend .font-sm;
-//     @extend .mb-sm;
-//
+.sub-title {
+    @extend .font-md;
+    font-weight: 400;
+    display: block;
+}
 
 .content-width {
     width: 90%;
@@ -92,11 +92,22 @@ body {
     @include mq(md) {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
 }
 
 .mb-sm {
     margin-bottom: 16px;
+}
+
+.mb-md {
+    margin-bottom: 20px;
+    @include mq(md) {
+        margin-bottom: 40px;
+    }
+    @include mq(lg) {
+        margin-bottom: 60px;
+    }
 }
 
 .mb-lg {
