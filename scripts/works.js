@@ -1,31 +1,61 @@
 document.addEventListener("DOMContentLoaded", function () {
     const worksContainer = document.getElementById("works-container");
 
-    const items = [
-        {
-            title: "Site d'échange de cours de français et de japonais",
-            imageUrl: "img/bubble2.png",
-            imageAlt: "site avec photo de france et japon",
-        },
-        {
-            title: "Site du café",
-            imageUrl: "img/sayacafe.png",
-            imageAlt: "site avec photo de café",
-        },
-        {
-            title: "Application de gestion des employés",
-            imageUrl: "img/image.png",
-            imageAlt: "site avec formulaire",
-        },
+    // URLから言語情報を取得
+    const urlParams = new URLSearchParams(window.location.search);
+    const language = urlParams.get("lang") || "fr"; // デフォルトはフランス語
 
-        {
-            title: "Site du restaurant",
-            imageUrl: "img/ohmy.png",
-            imageAlt: "site avec photo de plat",
-        },
-    ];
+    // 言語に応じたコンテンツ
+    const items = {
+        fr: [
+            {
+                title: "Site d'échange de cours de français et de japonais",
+                imageUrl: "img/bubble2.png",
+                imageAlt: "site avec photo de france et japon",
+            },
+            {
+                title: "Site du café",
+                imageUrl: "img/sayacafe.png",
+                imageAlt: "site avec photo de café",
+            },
+            {
+                title: "Application de gestion des employés",
+                imageUrl: "img/image.png",
+                imageAlt: "site avec formulaire",
+            },
+            {
+                title: "Site du restaurant",
+                imageUrl: "img/ohmy.png",
+                imageAlt: "site avec photo de plat",
+            },
+        ],
+        jp: [
+            {
+                title: "フランス語と日本語の交換サイト",
+                imageUrl: "img/bubble2.png",
+                imageAlt: "フランスと日本の写真付きサイト",
+            },
+            {
+                title: "カフェのサイト",
+                imageUrl: "img/sayacafe.png",
+                imageAlt: "カフェの写真付きサイト",
+            },
+            {
+                title: "従業員管理アプリケーション",
+                imageUrl: "img/image.png",
+                imageAlt: "フォーム付きサイト",
+            },
+            {
+                title: "レストランのサイト",
+                imageUrl: "img/ohmy.png",
+                imageAlt: "料理の写真付きサイト",
+            },
+        ],
+    };
 
-    items.forEach((item) => {
+    const selectedItems = items[language] || items["fr"]; // 言語が無い場合、デフォルトはフランス語
+
+    selectedItems.forEach((item) => {
         const worksItem = document.createElement("div");
         worksItem.classList.add("works__item");
 

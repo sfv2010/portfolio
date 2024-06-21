@@ -9,13 +9,14 @@
     height: 100vh;
     z-index: 2;
     transition: all 0.5s;
+    transition: transform 0.5s;
 }
 
 .textAnimationName {
     font-weight: 700;
-    font-size: 16px;
+    font-size: 20px;
     @include mq(sm) {
-        font-size: 20px;
+        font-size: 26px;
     }
     letter-spacing: 0.05em;
     @include mq(md) {
@@ -27,10 +28,10 @@
 }
 .textAnimation {
     letter-spacing: 0.05em;
-    font-size: 11px;
+    font-size: 14px;
     margin: 4% 0 6%;
     @include mq(sm) {
-        font-size: 14px;
+        font-size: 17px;
     }
     @include mq(md) {
         font-size: 19px;
@@ -44,41 +45,6 @@
     font-size: 1.1rem;
     letter-spacing: 0.05em;
     line-height: 1.5;
-}
-
-.btn {
-    background-color: $cWhite;
-    color: $cBlack;
-    margin: 50px 0;
-    padding: 10px 40px;
-    font-weight: 600;
-    border: 2px solid $cBlack;
-    transition: all 0.3s;
-    z-index: 1;
-    &.slid-bg {
-        position: relative;
-        overflow: hidden;
-        &::before {
-            content: "";
-            display: inline-block;
-            width: 100%;
-            height: 100%;
-            background-color: black;
-            // border: 2px solid $cBlack;
-            position: absolute;
-            top: 0;
-            left: 0;
-            transform: translateX(-100%);
-            transition: transform 0.3s;
-            z-index: -1;
-        }
-        &:hover {
-            color: $cWhite;
-            &::before {
-                transform: none;
-            }
-        }
-    }
 }
 
 .main {
@@ -193,7 +159,7 @@
         }
     }
     &__title {
-        @extend .font-sm;
+        @extend .font-md;
         font-weight: 700;
         margin: 5px 0;
         text-align: center;

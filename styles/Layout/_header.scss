@@ -7,18 +7,19 @@
     background-color: $cWhite;
     height: $navHeight;
     width: 100%;
-
-    // justify-content: flex-end;
-    // align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     &__inner {
         display: flex;
         justify-content: space-between;
         @extend .content-width;
-
         align-items: center;
     }
     &__logo {
-        width: 100px;
+        width: 80px;
+        @include mq(md) {
+            width: 100px;
+        }
     }
     &__nav {
         display: none;
@@ -32,8 +33,33 @@
         align-items: center;
     }
     &__li {
+        position: relative;
         margin: 10px;
         padding: 10px;
+        transition: all 0.3s;
+
+        &::after {
+            position: absolute;
+            left: 0;
+            content: "";
+            width: 100%;
+            height: 2px;
+            background: #000000;
+            bottom: -1px;
+            transform: scale(0, 1);
+            transform-origin: center top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の右端*/
+            transition: transform 0.3s; /*変形の時間*/
+        }
+
+        &:hover {
+            color: $colorPrimary;
+            &::after {
+                transform: scale(1, 1); /*ホバー後、x軸方向に1（相対値）伸長*/
+            }
+        }
+    }
+    &__btn {
+        margin-left: 20px;
     }
 }
 

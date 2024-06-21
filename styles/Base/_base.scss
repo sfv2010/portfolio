@@ -26,12 +26,15 @@ li {
 body {
     font-family: "Lusitana", "Times New Roman", "Noto Sans JP", sans-serif;
 }
+.jp {
+    font-family: "Noto Sans JP";
+}
 
 // font
 .font-sm {
-    font-size: 10px;
+    font-size: 13px;
     @include mq(sm) {
-        font-size: 12px;
+        font-size: 14px;
     }
     @include mq(md) {
         font-size: 15px;
