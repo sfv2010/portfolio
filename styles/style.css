@@ -663,27 +663,6 @@ img {
 .btn.slid-bg:hover::before {
   transform: none;
 }
-.btn.slid-bg-black .slid-bg::before {
-  background-color: black;
-}
-.btn.slid-bg-black .slid-bg:hover {
-  color: white;
-}
-.btn.reverse.slid-bg-white .slid-bg::before {
-  background-color: white;
-}
-.btn.reverse.slid-bg-white .slid-bg:hover {
-  color: black;
-}
-.btn.reverse .slid-bg {
-  color: white;
-  background-color: black;
-  border: 2px solid white;
-}
-.btn.reverse .slid-bg:hover {
-  color: black;
-  background-color: white;
-}
 
 .main__img {
   position: relative;
