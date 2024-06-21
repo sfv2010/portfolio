@@ -29,12 +29,30 @@
 			<div id="container">
 				<div class="menuMobile__cover"> </div>
 
-				<header id="header">
-					<button class="menuMobile__btn">
-						<span></span>
-						<span></span>
-						<span></span>
-					</button>
+				<header class="header">
+					<div class="header__inner">
+						<div class="header__logo">
+							<img src="img/4.png" alt="" class="logo__img">
+						</div>
+						<nav class="header__nav">
+							<ul class="header__ul">
+								<li><a class="header__li" href="">Top</a></li>
+								<li><a class="header__li" href="">About </a></li>
+								<li><a class="header__li" href="">Works</a></li>
+							</ul>
+							<div class="header__btn">
+								<button class="btn filled slid-bg">Contact</button>
+							</div>
+
+						</nav>
+
+						<button class="menuMobile__btn">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+
+					</div>
 
 
 				</header>
@@ -45,36 +63,57 @@
 							<p class="textAnimation"></p>
 						</div>
 					</div> -->
-					<div class="main__img mb-lg ">
+					<div class="main__img">
 						<img src="img/mado1.jpg" alt="Fenêtre du temple de Kyoto" class="main__burner">
 						<div class="main__text">
-							<h1 class="textAnimationName"></h1>
+							<p class="textAnimationName"></p>
 							<p class="textAnimation"></p>
 						</div>
-						<p class="main__p font-sm">Un site Web qui donne vie aux histoires</p>
+						<h1 class="main__p font-sm">Un site Web qui donne vie aux histoires</h1>
 
 					</div>
-					<div class="main__box content-width">
-						<div class="about mb-lg">
-							<h2 class="about-title mb-sm tween-animate animate-title main-title">Présentation</h2>
-							<p class="about__p font-md">
-								Cuisine faite avec affection.<br> Plante cultivée avec affection. <br>Tableau
-								réalisé
-								avec
-								affection.<br>
+					<div class="main__box">
+						<section class="about">
+							<div class="about__inner">
+								<h2 class="about__title  tween-animate animate-title main-title">Présentation
+								</h2>
+								<div class="about__box">
+									<div class="about__img">
+										<img class="" src="img/love.jpg" alt="">
+									</div>
+									<div class="about__text">
+										<p class="about__p">
+											Cuisine faite avec affection.<br> Plante cultivée avec affection.
+											<br>Tableau
+											réalisé
+											avec
+											affection.<br><br>
 
-								Les choses faites avec affection et qui ont une histoire touchent le cœur des
-								gens.<br>
+											Les choses faites avec affection et qui ont une histoire touchent le
+											cœur
+											des
+											gens.<br><br>
 
-								Je crée des sites web remplis d'affection et qui touchent le cœur, <br>afin que
-								quiconque
-								visite
-								le site puisse imaginer l'histoire.
-							</p>
-						</div>
+											Je crée des sites web remplis d'affection et qui touchent le cœur,
+											afin
+											que
+											quiconque
+											visite
+											le site puisse imaginer l'histoire.
+										</p>
 
 
-						<div class="works">
+									</div>
+
+								</div>
+								<div class="about__btn">
+									<button class="btn slid-bg">CONTACTEZ-MOI</button>
+								</div>
+							</div>
+						</section>
+
+
+						<section class="works">
 							<div>
 								<h2 class="main-title tween-animate">Works</h2>
 								<p class="sub-title mb-sm tween-animate">Mes Projets</p>
@@ -83,33 +122,54 @@
 
 							<div class="flex" id="works-container"></div>
 
+						</section>
+					</div>
+
+
+				</main>
+				<footer class="footer">
+					<div class="footer__container">
+						<div class="logo">
+							<img src="img/logo.png" alt="" class="logo__img">
 						</div>
+						<nav class="footer__nav">
+							<ul class="footer__ul">
+								<li><a class="footer__li" href="">Top</a></li>
+								<li><a class="footer__li" href="">About </a></li>
+								<li><a class="footer__li" href="">Works</a></li>
+								<li><a class="footer__li" href="">Contact</a></li>
+							</ul>
+
+						</nav>
+
+					</div>
+					<div class="footer__copylight">
+						&copy; Sayaka VINCENT
 					</div>
 			</div>
+			<nav class="menuMobile">
+				<ul class="menuMobile__main">
+					<li class="menuMobile__item">
+						<a href="#" class="menuMobile__link">
+							<span class="main-title">Home</span>
+						</a>
+					</li>
+					<li class="menuMobile__item">
+						<a href="#" class="menuMobile__link">
+							<span class="main-title">About</span>
+						</a>
+					</li>
+					<li class="menuMobile__item">
+						<a href="#" class="menuMobile__link">
+							<span class="main-title">Contact</span>
+						</a>
+					</li>
+				</ul>
 
-			</main>
+			</nav>
 		</div>
-		<nav class="menuMobile">
-			<ul class="menuMobile__main">
-				<li class="menuMobile__item">
-					<a href="#" class="menuMobile__link">
-						<span class="mainTitle">Home</span>
-					</a>
-				</li>
-				<li class="menuMobile__item">
-					<a href="#" class="menuMobile__link">
-						<span class="mainTitle">About</span>
-					</a>
-				</li>
-				<li class="menuMobile__item">
-					<a href="#" class="menuMobile__link">
-						<span class="mainTitle">Contact</span>
-					</a>
-				</li>
-			</ul>
 
-		</nav>
-		</div>
+
 		<script src="scripts/vendors/gsap.min.js"></script>
 		<script src="scripts/mobile.js"></script>
 		<script src="scripts/scroll.js"></script>

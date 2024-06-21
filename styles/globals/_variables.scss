@@ -3,14 +3,17 @@
 $colorPrimary: #884898;
 $colorSecondary: #a2aad4;
 $colorTertiary: #be9fb2;
+
 $colorPrimaryLight: lighten($colorPrimary, 33%);
 $colorTertiarydark: darken($colorTertiary, 50%);
 $color1: black;
 $color1light: lighten($color1, 20%);
 $color2: #fff;
 $color3: #f2f2f2;
-$color3dark: darken($color3, 5%);
-$color3darkmore: darken($color3, 20%);
-$colorGradient: linear-gradient($colorSecondary, $colorPrimary);
 $cWhite: white;
 $cBlack: black;
+$cSubTitle: #535353;
+$cBgGray: #eaebe6;
+$cWineRed: #904669;
+$contentMaxWidth: 1070px;
+$navHeight: 80px;

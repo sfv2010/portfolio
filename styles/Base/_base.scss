@@ -73,6 +73,7 @@ body {
     @extend .font-lg;
     font-weight: 600;
     display: block;
+    color: black;
 }
 
 .sub-title {
@@ -101,12 +102,12 @@ body {
 }
 
 .mb-md {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     @include mq(md) {
-        margin-bottom: 40px;
+        margin-bottom: 70px;
     }
     @include mq(lg) {
-        margin-bottom: 60px;
+        margin-bottom: 90px;
     }
 }
 
@@ -120,6 +121,7 @@ body {
 .pb-sm {
     padding-bottom: 16px;
 }
+
 .pb-lg {
     padding-bottom: 80px;
     @include mq(lg) {

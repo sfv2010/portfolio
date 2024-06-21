@@ -1,0 +1,45 @@
+@use "../globals" as *;
+@use "../Base/base" as *;
+
+.footer {
+    padding: 20px 0;
+    color: $cWhite;
+    background-color: black;
+    &__container {
+        @extend .content-width;
+        @extend .flex;
+        @extend .mb-sm;
+        align-items: center;
+        justify-content: space-between;
+        color: $cWhite;
+    }
+    &__nav {
+        @extend .flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__ul {
+        @extend .flex;
+        justify-content: space-around;
+    }
+    &__li {
+        margin: 10px;
+        padding: 10px;
+        color: $cWhite;
+    }
+    &__copylight {
+        font-size: 12px;
+    }
+}
+.logo {
+    width: 120px;
+    @include mq(md) {
+        width: 150px;
+    }
+
+    &__img {
+        width: 100%;
+    }
+}

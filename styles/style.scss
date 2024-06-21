@@ -1,8 +1,10 @@
 // @use "loader" as *;
 
+@use "Layout/footer";
 @use "Layout/header";
 @use "Layout/loader";
 @use "Layout/slider";
+@use "Layout/text";
 
 @use "Pages/main";
 @use "Utils/animations";

@@ -1,11 +1,40 @@
 @use "../globals" as *;
+@use "../Base/base" as *;
 
-#header {
-    background-color: $cWhite;
-    height: 100px;
+.header {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    background-color: $cWhite;
+    height: $navHeight;
+    width: 100%;
+
+    // justify-content: flex-end;
+    // align-items: center;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        @extend .content-width;
+
+        align-items: center;
+    }
+    &__logo {
+        width: 100px;
+    }
+    &__nav {
+        display: none;
+        @include mq(lg) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__ul {
+        display: flex;
+        align-items: center;
+    }
+    &__li {
+        margin: 10px;
+        padding: 10px;
+    }
 }
 
 .header__menuOpen {
@@ -76,10 +105,13 @@
         color: $cBlack;
     }
     &__btn {
+        @include mq(lg) {
+            display: none;
+        }
         background-color: transparent;
         border: none;
         cursor: pointer;
-        margin-right: 10px;
+        margin-right: 20px;
 
         & > span {
             background-color: $cBlack;
