@@ -95,6 +95,7 @@
 .about,
 .works {
     @extend .mb-lg;
+    padding-top: 50px;
     text-align: left;
 }
 
@@ -148,6 +149,14 @@
         @include mq(lg) {
             text-align: left;
         }
+    }
+    &__btn {
+        margin-top: 40px;
+    }
+    &__a {
+        display: inline-block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
     }
 }
 

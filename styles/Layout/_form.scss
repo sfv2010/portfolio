@@ -9,7 +9,11 @@
     padding: 50px 0;
 
     &__title {
-        margin: 60px 0 80px;
+        margin: 60px 0 30px;
+    }
+    &__p {
+        margin-bottom: 80px;
+        font-weight: 300;
     }
 
     &__form {

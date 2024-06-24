@@ -257,6 +257,12 @@ body {
 .header__btn {
   margin-left: 20px;
 }
+.header__a {
+  font-size: 14px;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid black;
+}
 
 .header__menuOpen #container {
   transform: translate(-200px, 60px);
@@ -682,9 +688,10 @@ img {
 
 .btn {
   background-color: white;
+  border: 2px solid black;
   color: black;
   margin: 50px 0;
-  padding: 16px 40px;
+  padding: 13px 34px;
   font-weight: 600;
   transition: all 0.3s;
   z-index: 1;
@@ -748,7 +755,11 @@ img {
   padding: 50px 0;
 }
 .contact__title {
-  margin: 60px 0 80px;
+  margin: 60px 0 30px;
+}
+.contact__p {
+  margin-bottom: 80px;
+  font-weight: 300;
 }
 .contact__form {
   flex-direction: column;
@@ -917,6 +928,7 @@ img {
 
 .about,
 .works {
+  padding-top: 50px;
   text-align: left;
 }
 
@@ -970,6 +982,14 @@ img {
   .about__p {
     text-align: left;
   }
+}
+.about__btn {
+  margin-top: 40px;
+}
+.about__a {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
 }
 
 @media screen and (min-width: 600px) {

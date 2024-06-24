@@ -37,8 +37,8 @@
 						</div>
 						<nav class="header__nav">
 							<ul class="header__ul">
-								<li><a class="header__li" href="">Home</a></li>
-								<li><a class="header__li" href="">About </a></li>
+								<li><a class="header__li" href="index.html">Home</a></li>
+								<li><a class="header__li" href="#about">About </a></li>
 								<li><a class="header__li" href="#works">Works</a></li>
 								<li><a class="header__li" href="jp.html?lang=jp">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24" width="36"
@@ -50,7 +50,7 @@
 									</a></li>
 							</ul>
 							<div class="header__btn">
-								<button class="btn reverse-slid-bg ">CONTACT</button>
+								<a class="header__a btn reverse-slid-bg" href="#contact">Contact</a>
 							</div>
 
 						</nav>
@@ -76,7 +76,7 @@
 
 					</div>
 					<div class="main__box">
-						<section class="about">
+						<section class="about" id="about">
 							<div class="about__inner">
 								<h2 class="about__title  tween-animate animate-title main-title">Présentation
 								</h2>
@@ -110,8 +110,10 @@
 
 								</div>
 								<div class="about__btn">
-									<button class="btn slid-bg">CONTACTEZ - MOI</button>
+									<a class="about__a btn slid-bg" href="mailto:sfv2010@hotmail.fr">CONTACTEZ -
+										MOI</a>
 								</div>
+
 							</div>
 						</section>
 
@@ -126,7 +128,7 @@
 							<div class="flex" id="works-container"></div>
 
 						</section>
-						<section class="contact">
+						<section id="contact" class="contact">
 							<h1 class="contact__title main-title tween-animate">Contactez-moi</h1>
 							<form action="https://api.staticforms.xyz/submit" method="post" class="contact__form">
 								<input type="hidden" name="accessKey" value="202e9109-b303-4a3c-bfcb-952215c913b5">
@@ -167,7 +169,7 @@
 								<li><a class="footer__li" href="index.html">Top</a></li>
 								<li><a class="footer__li" href="">About </a></li>
 								<li><a class="footer__li" href="#works">Works</a></li>
-								<li><a class="footer__li" href="">Contact</a></li>
+								<li><a class="footer__li" href="#contact">Contact</a></li>
 							</ul>
 
 						</nav>
@@ -186,12 +188,12 @@
 						</a>
 					</li>
 					<li class="menuMobile__item">
-						<a href="#" class="menuMobile__link">
+						<a href="#about" class="menuMobile__link">
 							<span class="main-title">About</span>
 						</a>
 					</li>
 					<li class="menuMobile__item">
-						<a href="#" class="menuMobile__link">
+						<a href="#works" class="menuMobile__link">
 							<span class="main-title">Works</span>
 						</a>
 					</li>
@@ -201,7 +203,7 @@
 						</a>
 					</li>
 					<li class="menuMobile__item">
-						<a href="#" class="menuMobile__link">
+						<a href="#contact" class="menuMobile__link">
 							<span class="main-title">Contact</span>
 						</a>
 					</li>
@@ -218,7 +220,6 @@
 		<script src="scripts/textAnimation.js"></script>
 		<script src="scripts/textTerminal.js"></script>
 		<script src="scripts/works.js"></script>
-		<script src="scripts/confirmation.js"></script>
 		<script src="./main.js"></script>
 	</body>
 
