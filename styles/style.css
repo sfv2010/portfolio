@@ -101,18 +101,18 @@ body {
   display: block;
 }
 
-.content-width, .main__box, .header__inner, .footer__container {
+.content-width, .main__box, .confirmation__box, .header__inner, .footer__container {
   width: 90%;
   margin: 0 auto;
   max-width: 1200px;
 }
 
-.flex, .footer__container, .footer__nav, .footer__ul {
+.flex, .contact__form, .contact__item, .footer__container, .footer__nav, .footer__ul {
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 600px) {
-  .flex, .footer__container, .footer__nav, .footer__ul {
+  .flex, .contact__form, .contact__item, .footer__container, .footer__nav, .footer__ul {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -138,13 +138,13 @@ body {
 }
 
 .mb-lg, .main__img, .about,
-.works {
+.works, .contact {
   margin-bottom: 80px;
 }
 @media screen and (min-width: 960px) {
   .mb-lg, .main__img, .about,
-  .works {
-    margin-bottom: 150px;
+  .works, .contact {
+    margin-bottom: 180px;
   }
 }
 
@@ -216,11 +216,6 @@ body {
 }
 .header__logo {
   width: 80px;
-}
-@media screen and (min-width: 600px) {
-  .header__logo {
-    width: 100px;
-  }
 }
 .header__nav {
   display: none;
@@ -624,6 +619,66 @@ img {
 .animate-title.inview .char:nth-child(30) {
   animation-delay: 1.2s;
 }
+.animate-title.inview .char:nth-child(31) {
+  animation-delay: 1.24s;
+}
+.animate-title.inview .char:nth-child(32) {
+  animation-delay: 1.28s;
+}
+.animate-title.inview .char:nth-child(33) {
+  animation-delay: 1.32s;
+}
+.animate-title.inview .char:nth-child(34) {
+  animation-delay: 1.36s;
+}
+.animate-title.inview .char:nth-child(35) {
+  animation-delay: 1.4s;
+}
+.animate-title.inview .char:nth-child(36) {
+  animation-delay: 1.44s;
+}
+.animate-title.inview .char:nth-child(37) {
+  animation-delay: 1.48s;
+}
+.animate-title.inview .char:nth-child(38) {
+  animation-delay: 1.52s;
+}
+.animate-title.inview .char:nth-child(39) {
+  animation-delay: 1.56s;
+}
+.animate-title.inview .char:nth-child(40) {
+  animation-delay: 1.6s;
+}
+.animate-title.inview .char:nth-child(41) {
+  animation-delay: 1.64s;
+}
+.animate-title.inview .char:nth-child(42) {
+  animation-delay: 1.68s;
+}
+.animate-title.inview .char:nth-child(43) {
+  animation-delay: 1.72s;
+}
+.animate-title.inview .char:nth-child(44) {
+  animation-delay: 1.76s;
+}
+.animate-title.inview .char:nth-child(45) {
+  animation-delay: 1.8s;
+}
+.animate-title.inview .char:nth-child(46) {
+  animation-delay: 1.84s;
+}
+.animate-title.inview .char:nth-child(47) {
+  animation-delay: 1.88s;
+}
+.animate-title.inview .char:nth-child(48) {
+  animation-delay: 1.92s;
+}
+.animate-title.inview .char:nth-child(49) {
+  animation-delay: 1.96s;
+}
+.animate-title.inview .char:nth-child(50) {
+  animation-delay: 2s;
+}
 
 .btn {
   background-color: white;
@@ -646,6 +701,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: black;
+  border: 2px solid black;
   position: absolute;
   top: 0;
   left: 0;
@@ -684,6 +740,84 @@ img {
 }
 .btn.reverse-slid-bg:hover::before {
   transform: none;
+}
+
+.contact {
+  border: 1.5px solid #eaebe6;
+  border-radius: 5px;
+  padding: 50px 0;
+}
+.contact__title {
+  margin: 60px 0 80px;
+}
+.contact__form {
+  flex-direction: column;
+  margin: auto;
+}
+@media screen and (min-width: 600px) {
+  .contact__form {
+    width: 460px;
+  }
+}
+.contact__item {
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 600px) {
+  .contact__item {
+    display: block;
+  }
+}
+.contact__label {
+  text-align: left;
+  width: 100px;
+  margin: 5px 0;
+  border-left: 3px solid #884898;
+  padding-left: 10px;
+}
+@media screen and (min-width: 600px) {
+  .contact__label {
+    float: left;
+  }
+}
+.contact__inputs {
+  border: 2px solid black;
+  width: 280px;
+  padding: 15px;
+  border-radius: 5px;
+}
+.contact textarea {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  height: 150px;
+  width: 280px;
+  font-size: 15px;
+}
+
+.confirm {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.confirmation {
+  border-top: 2px solid black;
+  background-color: #fffdfa;
+}
+.confirmation__box {
+  text-align: center;
+  padding: 50px 0;
+}
+.confirmation__text {
+  margin: 50px;
+}
+.confirmation__btn {
+  box-shadow: 5px 5px 10px 0 rgba(62, 61, 61, 0.5);
+  transition: 0.5s;
+}
+.confirmation__btn:hover {
+  background-color: black;
+  color: white;
 }
 
 #globalContainer {

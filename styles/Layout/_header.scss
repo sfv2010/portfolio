@@ -17,9 +17,6 @@
     }
     &__logo {
         width: 80px;
-        @include mq(md) {
-            width: 100px;
-        }
     }
     &__nav {
         display: none;

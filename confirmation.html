@@ -16,17 +16,8 @@
 	</head>
 
 	<body>
-		<div class="loader">
-			<div class="loader__bloc">
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-		</div>
-		<div id="globalContainer">
+
+		<div id="globalContainer confirm">
 			<div id="container">
 				<div class="menuMobile__cover"> </div>
 
@@ -66,93 +57,19 @@
 
 				</header>
 				<main class="main">
-					<div class="main__img">
-						<img src="img/mado1.jpg" alt="Fenêtre du temple de Kyoto" class="main__burner">
-						<div class="main__text">
-							<p class="textAnimationName"></p>
-							<p class="textAnimation"></p>
+
+					<div id="confirmation" class="confirmation">
+						<div class="confirmation__box">
+							<h1 class="main-title tween-animate confirmation__text">
+								Votre message a été envoyé avec succès !
+							</h1>
+							<p class="sub-title confirmation__p">
+								Je vous remercie sincèrement<br> et <br>je vous répondrai dans
+								les plus brefs
+								délais.
+							</p>
+							<button id="reloadBtn" class="confirmation__btn btn">OK</button>
 						</div>
-						<h1 class="main__p font-sm">Un site Web qui donne vie aux histoires</h1>
-
-					</div>
-					<div class="main__box">
-						<section class="about">
-							<div class="about__inner">
-								<h2 class="about__title  tween-animate animate-title main-title">Présentation
-								</h2>
-								<div class="about__box">
-									<div class="about__img">
-										<img class="" src="img/love.jpg" alt="">
-									</div>
-									<div class="about__text">
-										<p class="about__p">
-											Cuisine faite avec affection.<br> Plante cultivée avec affection.
-											<br>Tableau
-											réalisé
-											avec
-											affection.<br><br>
-
-											Les choses faites avec affection et qui ont une histoire touchent le
-											cœur
-											des
-											gens.<br><br>
-
-											Je crée des sites web remplis d'affection et qui touchent le cœur,
-											afin
-											que
-											quiconque
-											visite
-											le site puisse imaginer l'histoire.
-										</p>
-
-
-									</div>
-
-								</div>
-								<div class="about__btn">
-									<button class="btn slid-bg">CONTACTEZ - MOI</button>
-								</div>
-							</div>
-						</section>
-
-
-						<section class="works" id="works">
-							<div>
-								<h2 class="main-title tween-animate">Works</h2>
-								<p class="sub-title mb-sm tween-animate">Mes Projets</p>
-
-							</div>
-
-							<div class="flex" id="works-container"></div>
-
-						</section>
-						<section class="contact">
-							<h1 class="contact__title main-title tween-animate">Contactez-moi</h1>
-							<form action="https://api.staticforms.xyz/submit" method="post" class="contact__form">
-								<input type="hidden" name="accessKey" value="202e9109-b303-4a3c-bfcb-952215c913b5">
-								<div class="contact__item">
-									<label for="name" class="contact__label sub-title">Nom</label>
-									<input type="text" id="name" name="name" class="contact__inputs"
-										placeholder="Votre Nom" required>
-								</div>
-								<div class="contact__item">
-									<label for="email" class="contact__label sub-title">Email</label>
-									<input type="email" id="email" name="email" class="contact__inputs"
-										placeholder="Votre e-mail" required>
-								</div>
-								<div class="contact__item">
-									<label for="message" class="contact__label sub-title">Message</label>
-									<textarea id="message" name="message" class="contact__inputs"
-										placeholder="Votre Message" required></textarea>
-								</div>
-								<input type="hidden" name="redirectTo" value="https://sfv2010.github.io/portfolio/">
-								<div class="contact__btn">
-									<button type="submit" class="btn reverse-slid-bg">Envoyer</button>
-								</div>
-							</form>
-						</section>
-
-
 					</div>
 
 
@@ -216,9 +133,8 @@
 		<script src="scripts/scroll.js"></script>
 		<script src="scripts/slider.js"></script>
 		<script src="scripts/textAnimation.js"></script>
-		<script src="scripts/textTerminal.js"></script>
-		<script src="scripts/works.js"></script>
 		<script src="scripts/confirmation.js"></script>
+
 		<script src="./main.js"></script>
 	</body>
 
