@@ -825,8 +825,6 @@ img {
   background-image: url("../../img/4.png");
   background-size: contain; /* 画像のサイズ調整 */
   background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.5);
-  background-blend-mode: overlay;
 }
 .confirm__main {
   height: 450px;
