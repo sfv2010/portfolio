@@ -750,9 +750,8 @@ img {
 }
 
 .contact {
-  background-color: #fffdfa;
-  border: 1.5px solid #eaebe6;
-  border-radius: 5px;
+  background-color: #fff5e0;
+  border-radius: 10px;
   padding: 50px 0;
 }
 .contact__title {
@@ -765,11 +764,16 @@ img {
 .contact__form {
   flex-direction: column;
   align-items: center;
-  margin: auto;
+  margin: 70px auto;
 }
 @media screen and (min-width: 600px) {
   .contact__form {
     width: 460px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .contact__form {
+    width: 700px;
   }
 }
 .contact__item {
@@ -799,6 +803,11 @@ img {
   padding: 15px;
   border-radius: 5px;
 }
+@media screen and (min-width: 600px) {
+  .contact__inputs {
+    width: 400px;
+  }
+}
 .contact textarea {
   border: 2px solid black;
   border-radius: 5px;
@@ -806,6 +815,12 @@ img {
   height: 150px;
   width: 280px;
   font-size: 15px;
+}
+@media screen and (min-width: 600px) {
+  .contact textarea {
+    height: 200px;
+    width: 400px;
+  }
 }
 
 .confirm {
