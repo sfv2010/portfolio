@@ -3,7 +3,7 @@
 
 .contact {
     @extend .mb-lg;
-
+    background-color: #fffdfa;
     border: 1.5px solid $cBgGray;
     border-radius: 5px;
     padding: 50px 0;
@@ -19,6 +19,7 @@
     &__form {
         @extend .flex;
         flex-direction: column;
+        align-items: center;
         margin: auto;
         @include mq(md) {
             width: 460px;
@@ -27,6 +28,7 @@
     &__item {
         @extend .flex;
         flex-direction: column;
+
         margin-bottom: 40px;
         @include mq(md) {
             display: block;
@@ -57,32 +59,5 @@
         height: 150px;
         width: 280px;
         font-size: 15px;
-    }
-}
-
-.confirm {
-    margin-bottom: 0;
-    text-align: center;
-}
-
-.confirmation {
-    border-top: 2px solid $cBlack;
-    background-color: #fffdfa;
-    &__box {
-        @extend .content-width;
-        text-align: center;
-        padding: 50px 0;
-    }
-
-    &__text {
-        margin: 50px;
-    }
-    &__btn {
-        box-shadow: 5px 5px 10px 0 rgba(62, 61, 61, 0.5);
-        transition: 0.5s;
-        &:hover {
-            background-color: $cBlack;
-            color: $cWhite;
-        }
     }
 }

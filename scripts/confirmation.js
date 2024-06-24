@@ -1,6 +1,6 @@
 // script.js
 document.addEventListener("DOMContentLoaded", (event) => {
-    const reloadBtn = document.getElementById("reloadBtn");
+    const reloadBtn = document.getElementById("confirmation");
 
     reloadBtn.onclick = function () {
         window.location.href = "index.html";
