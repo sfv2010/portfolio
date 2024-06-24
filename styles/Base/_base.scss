@@ -26,9 +26,9 @@ li {
 body {
     font-family: "Lusitana", "Times New Roman", "Noto Sans JP", sans-serif;
 }
-.jp {
-    font-family: "Noto Sans JP";
-}
+// .jp {
+//     font-family: "Noto Sans JP";
+// }
 
 // font
 .font-sm {
@@ -76,7 +76,6 @@ body {
     @extend .font-lg;
     font-weight: 600;
     display: block;
-    color: black;
 }
 
 .sub-title {

@@ -33,10 +33,6 @@ body {
   font-family: "Lusitana", "Times New Roman", "Noto Sans JP", sans-serif;
 }
 
-.jp {
-  font-family: "Noto Sans JP";
-}
-
 .font-sm {
   font-size: 13px;
 }
@@ -98,7 +94,6 @@ body {
 .main-title {
   font-weight: 600;
   display: block;
-  color: black;
 }
 
 .sub-title {
@@ -269,7 +264,7 @@ body {
 }
 
 .header__menuOpen #container {
-  transform: translate(-150px, 60px);
+  transform: translate(-200px, 60px);
   box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
 }
 .header__menuOpen .menuMobile__cover {
@@ -289,6 +284,12 @@ body {
 .header__menuOpen .menuMobile__item:nth-child(3) {
   transition-delay: 0.21s;
 }
+.header__menuOpen .menuMobile__item:nth-child(4) {
+  transition-delay: 0.28s;
+}
+.header__menuOpen .menuMobile__item:nth-child(5) {
+  transition-delay: 0.35s;
+}
 .header__menuOpen .menuMobile__btn > span:nth-child(1) {
   transform: translateY(12px) rotate(135deg);
 }
@@ -301,7 +302,7 @@ body {
 
 .menuMobile {
   position: fixed;
-  right: 0;
+  right: 40px;
   top: 60px;
 }
 .menuMobile__cover {
@@ -325,6 +326,24 @@ body {
   padding: 0 40px;
   transition: transform 0.3s, opacity 0.2s;
   opacity: 0;
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+}
+.menuMobile__item::after {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #000000;
+  bottom: -1px;
+  transform: scale(0, 1);
+  transform-origin: center top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の右端*/
+  transition: transform 0.3s; /*変形の時間*/
+}
+.menuMobile__item:hover::after {
+  transform: scale(1, 1); /*ホバー後、x軸方向に1（相対値）伸長*/
 }
 .menuMobile__link {
   display: block;
