@@ -823,6 +823,11 @@ img {
   }
 }
 
+.jp__label {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
 .confirm {
   position: fixed;
   top: 0;
