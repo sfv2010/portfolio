@@ -697,6 +697,7 @@ img {
   z-index: 1;
   letter-spacing: 2px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .btn.slid-bg {
   position: relative;

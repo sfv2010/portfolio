@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 imageUrl: "img/bubble2.png",
                 imageAlt: "site avec photo de france et japon",
                 linkUrl:
-                    "https://www.loom.com/share/a0f5d58025684843b652742860f57516?sid=9314f83c-6fc6-4196-b504-fad3125006a2://example.com/fr/bubble2",
+                    "https://www.loom.com/share/a0f5d58025684843b652742860f57516?sid=9314f83c-6fc6-4196-b504-fad3125006a2",
             },
             {
                 title: "Site du café",
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 imageUrl: "img/bubble2.png",
                 imageAlt: "フランスと日本の写真付きサイト",
                 linkUrl:
-                    "https://www.loom.com/share/a0f5d58025684843b652742860f57516?sid=9314f83c-6fc6-4196-b504-fad3125006a2s://example.com/fr/bubble2",
+                    "https://www.loom.com/share/a0f5d58025684843b652742860f57516?sid=9314f83c-6fc6-4196-b504-fad3125006a2",
             },
             {
                 title: "カフェのサイト",
@@ -72,24 +72,29 @@ document.addEventListener("DOMContentLoaded", function () {
         const coverSlide = document.createElement("div");
         coverSlide.classList.add("coverSlide", "hoverDarken");
 
-        const a = document.createElement("a");
-        a.href = item.linkUrl;
-        a.target = "_blank";
+        const imgLink = document.createElement("a");
+        imgLink.href = item.linkUrl;
+        imgLink.target = "_blank";
 
         const img = document.createElement("img");
         img.src = item.imageUrl;
         img.alt = item.imageAlt;
         img.classList.add("imgZoom");
 
-        a.appendChild(img);
-        coverSlide.appendChild(a);
+        imgLink.appendChild(img);
+        coverSlide.appendChild(imgLink);
         worksItem.appendChild(coverSlide);
+
+        const titleLink = document.createElement("a");
+        titleLink.href = item.linkUrl;
+        titleLink.target = "_blank";
 
         const worksTitle = document.createElement("p");
         worksTitle.classList.add("works__title");
         worksTitle.textContent = item.title;
 
-        worksItem.appendChild(worksTitle);
+        titleLink.appendChild(worksTitle);
+        worksItem.appendChild(titleLink);
 
         worksContainer.appendChild(worksItem);
     });
