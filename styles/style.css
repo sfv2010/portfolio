@@ -218,14 +218,12 @@ body {
 
 .logo {
   width: 100px;
+  height: auto;
 }
 @media screen and (min-width: 600px) {
   .logo {
     width: 150px;
   }
-}
-.logo__img {
-  width: 100%;
 }
 
 .header {
@@ -244,6 +242,7 @@ body {
 }
 .header__logo {
   width: 80px;
+  height: auto;
 }
 .header__nav {
   display: none;
@@ -1008,6 +1007,7 @@ img {
 }
 .main__burner {
   width: 100%;
+  height: auto;
 }
 
 .about,

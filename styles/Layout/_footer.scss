@@ -47,11 +47,8 @@
 }
 .logo {
     width: 100px;
+    height: auto;
     @include mq(md) {
         width: 150px;
-    }
-
-    &__img {
-        width: 100%;
     }
 }
