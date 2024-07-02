@@ -73,11 +73,11 @@ body {
   }
 }
 
-.font-lr {
+.font-lr, .menu-title {
   font-size: 17px;
 }
-@media screen and (min-width: 960px) {
-  .font-lr {
+@media screen and (min-width: 600px) {
+  .font-lr, .menu-title {
     font-size: 23px;
   }
 }
@@ -98,6 +98,11 @@ body {
 
 .sub-title {
   font-weight: 400;
+  display: block;
+}
+
+.menu-title {
+  font-weight: 600;
   display: block;
 }
 

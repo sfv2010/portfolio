@@ -60,7 +60,7 @@ body {
 .font-lr {
     font-size: 17px;
 
-    @include mq(lg) {
+    @include mq(md) {
         font-size: 23px;
     }
 }
@@ -81,6 +81,11 @@ body {
 .sub-title {
     @extend .font-md;
     font-weight: 400;
+    display: block;
+}
+.menu-title {
+    @extend .font-lr;
+    font-weight: 600;
     display: block;
 }
 
