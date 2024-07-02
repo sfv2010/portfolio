@@ -10,26 +10,26 @@ document.addEventListener("DOMContentLoaded", function () {
         fr: [
             {
                 title: "Site d'échange de cours de français et de japonais",
-                imageUrl: "img/bubble2.png",
+                imageUrl: "img/bubble.webp",
                 imageAlt: "site avec photo de france et japon",
                 linkUrl:
                     "https://www.loom.com/share/a0f5d58025684843b652742860f57516?sid=9314f83c-6fc6-4196-b504-fad3125006a2",
             },
             {
                 title: "Site du café",
-                imageUrl: "img/sayacafe.png",
+                imageUrl: "img/sayacafe.webp",
                 imageAlt: "site avec photo de café",
                 linkUrl: "https://sfv2010.github.io/site_sayacafe/",
             },
             {
                 title: "Application de gestion des employés",
-                imageUrl: "img/image.png",
+                imageUrl: "img/HRnet.webp",
                 imageAlt: "site avec formulaire",
                 linkUrl: "https://p14-wh.vercel.app/",
             },
             {
                 title: "Site du restaurant",
-                imageUrl: "img/ohmy.png",
+                imageUrl: "img/ohmy.webp",
                 imageAlt: "site avec photo de plat",
                 linkUrl: "https://sfv2010.github.io/Projet3-ohmyfood/",
             },
@@ -37,26 +37,26 @@ document.addEventListener("DOMContentLoaded", function () {
         jp: [
             {
                 title: "フランス語と日本語の交換サイト",
-                imageUrl: "img/bubble2.png",
+                imageUrl: "img/bubble.webp",
                 imageAlt: "フランスと日本の写真付きサイト",
                 linkUrl:
                     "https://www.loom.com/share/a0f5d58025684843b652742860f57516?sid=9314f83c-6fc6-4196-b504-fad3125006a2",
             },
             {
                 title: "カフェのサイト",
-                imageUrl: "img/sayacafe.png",
+                imageUrl: "img/sayacafe.webp",
                 imageAlt: "カフェの写真付きサイト",
                 linkUrl: "https://sfv2010.github.io/site_sayacafe/",
             },
             {
                 title: "従業員管理アプリケーション",
-                imageUrl: "img/image.png",
+                imageUrl: "img/HRnet.webp",
                 imageAlt: "フォーム付きサイト",
                 linkUrl: "https://p14-wh.vercel.app/",
             },
             {
                 title: "レストランのサイト",
-                imageUrl: "img/ohmy.png",
+                imageUrl: "img/ohmy.webp",
                 imageAlt: "料理の写真付きサイト",
                 linkUrl: "https://sfv2010.github.io/Projet3-ohmyfood/",
             },
