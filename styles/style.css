@@ -33,21 +33,21 @@ body {
   font-family: "Lusitana", "Times New Roman", "Noto Sans JP", sans-serif;
 }
 
-.font-sm {
+.font-sm, .footer__li {
   font-size: 13px;
 }
 @media screen and (min-width: 480px) {
-  .font-sm {
+  .font-sm, .footer__li {
     font-size: 14px;
   }
 }
 @media screen and (min-width: 600px) {
-  .font-sm {
+  .font-sm, .footer__li {
     font-size: 15px;
   }
 }
 @media screen and (min-width: 960px) {
-  .font-sm {
+  .font-sm, .footer__li {
     font-size: 19px;
   }
 }
@@ -167,7 +167,7 @@ body {
 }
 
 .footer {
-  padding: 20px 0;
+  padding-bottom: 20px;
   color: white;
   background-color: black;
 }
@@ -182,19 +182,32 @@ body {
   text-align: center;
 }
 .footer__ul {
+  flex-direction: row;
   justify-content: space-around;
 }
 .footer__li {
-  margin: 10px;
-  padding: 10px;
+  display: inline-block;
+  padding: 8px;
   color: white;
+  padding: 10px;
+  margin: 5px;
+  transition: all 0.3s;
+}
+@media screen and (min-width: 600px) {
+  .footer__li {
+    margin: 10px;
+  }
+}
+.footer__li:hover {
+  transform: scale(1.2);
 }
 .footer__copylight {
   font-size: 12px;
+  margin-top: 40px;
 }
 
 .logo {
-  width: 120px;
+  width: 100px;
 }
 @media screen and (min-width: 600px) {
   .logo {
@@ -308,7 +321,7 @@ body {
 
 .menuMobile {
   position: fixed;
-  right: 40px;
+  right: 70px;
   top: 60px;
 }
 .menuMobile__cover {
@@ -332,8 +345,7 @@ body {
   transition: transform 0.3s, opacity 0.2s;
   opacity: 0;
   position: relative;
-  margin: 10px;
-  padding: 10px;
+  padding: 5px;
 }
 .menuMobile__item::after {
   position: absolute;

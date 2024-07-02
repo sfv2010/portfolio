@@ -2,7 +2,7 @@
 @use "../Base/base" as *;
 
 .footer {
-    padding: 20px 0;
+    padding-bottom: 20px;
     color: $cWhite;
     background-color: black;
     &__container {
@@ -22,19 +22,31 @@
 
     &__ul {
         @extend .flex;
+        flex-direction: row;
         justify-content: space-around;
     }
     &__li {
-        margin: 10px;
-        padding: 10px;
+        display: inline-block;
+        padding: 8px;
         color: $cWhite;
+        padding: 10px;
+        margin: 5px;
+        @extend .font-sm;
+        @include mq(md) {
+            margin: 10px;
+        }
+        transition: all 0.3s;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
     &__copylight {
         font-size: 12px;
+        margin-top: 40px;
     }
 }
 .logo {
-    width: 120px;
+    width: 100px;
     @include mq(md) {
         width: 150px;
     }
