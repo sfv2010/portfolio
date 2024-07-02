@@ -866,13 +866,6 @@ img {
   margin-bottom: 0;
   text-align: center;
 }
-.confirm__logo {
-  width: 100px;
-  height: 100px;
-  background-image: url("../../img/4.png");
-  background-size: contain; /* 画像のサイズ調整 */
-  background-repeat: no-repeat;
-}
 .confirm__main {
   height: 450px;
 }
