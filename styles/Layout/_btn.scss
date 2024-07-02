@@ -2,6 +2,7 @@
 @use "../Base/base" as *;
 
 .btn {
+    @extend .font-md;
     background-color: $cWhite;
     border: 2px solid $cBlack;
     color: $cBlack;

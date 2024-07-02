@@ -52,23 +52,23 @@ body {
   }
 }
 
-.font-md, .about__p, .works__title, .sub-title {
+.font-md, .about__p, .works__title, .btn, .sub-title {
   font-size: 14px;
   letter-spacing: 0.03em;
   line-height: 1.5;
 }
 @media screen and (min-width: 480px) {
-  .font-md, .about__p, .works__title, .sub-title {
+  .font-md, .about__p, .works__title, .btn, .sub-title {
     font-size: 16px;
   }
 }
 @media screen and (min-width: 600px) {
-  .font-md, .about__p, .works__title, .sub-title {
+  .font-md, .about__p, .works__title, .btn, .sub-title {
     font-size: 17px;
   }
 }
 @media screen and (min-width: 960px) {
-  .font-md, .about__p, .works__title, .sub-title {
+  .font-md, .about__p, .works__title, .btn, .sub-title {
     font-size: 19px;
   }
 }
@@ -1076,7 +1076,6 @@ img {
 .about__a {
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
 }
 
 @media screen and (min-width: 600px) {
