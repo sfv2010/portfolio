@@ -18,6 +18,7 @@
 }
 
 .animate-title.inview .char {
+    display: inline-block;
     @include animation(
         $name: animate-chars,
         $duration: 0.5s,

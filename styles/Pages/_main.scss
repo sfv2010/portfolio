@@ -103,7 +103,8 @@
     @extend .mb-lg;
     text-align: center;
     &__title {
-        @extend .mb-md;
+        margin-top: 20px;
+        @extend .mb-sm;
     }
     &__box {
         @include mq(lg) {

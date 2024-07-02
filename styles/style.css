@@ -124,20 +124,30 @@ body {
   }
 }
 
-.mb-sm, .about__img, .footer__container {
-  margin-bottom: 16px;
+.mb-sm, .about__title, .about__img, .footer__container {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 600px) {
+  .mb-sm, .about__title, .about__img, .footer__container {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .mb-sm, .about__title, .about__img, .footer__container {
+    margin-bottom: 90px;
+  }
 }
 
-.mb-md, .about__title, .works__item {
+.mb-md, .works__item {
   margin-bottom: 50px;
 }
 @media screen and (min-width: 600px) {
-  .mb-md, .about__title, .works__item {
+  .mb-md, .works__item {
     margin-bottom: 70px;
   }
 }
 @media screen and (min-width: 960px) {
-  .mb-md, .about__title, .works__item {
+  .mb-md, .works__item {
     margin-bottom: 90px;
   }
 }
@@ -543,6 +553,7 @@ img {
 }
 
 .animate-title.inview .char {
+  display: inline-block;
   animation-name: animate-chars;
   animation-duration: 0.5s;
   animation-timing-function: cubic-bezier(0.39, 1.57, 0.58, 1);
@@ -1007,6 +1018,9 @@ img {
 
 .about {
   text-align: center;
+}
+.about__title {
+  margin-top: 20px;
 }
 @media screen and (min-width: 960px) {
   .about__box {

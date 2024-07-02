@@ -105,7 +105,13 @@ body {
 }
 
 .mb-sm {
-    margin-bottom: 16px;
+    margin-bottom: 30px;
+    @include mq(md) {
+        margin-bottom: 50px;
+    }
+    @include mq(lg) {
+        margin-bottom: 90px;
+    }
 }
 
 .mb-md {
