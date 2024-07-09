@@ -9,12 +9,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const items = {
         fr: [
             {
-                title: "Site d'échange de cours de français et de japonais",
-                imageUrl: "img/bubble.webp",
-                imageAlt: "site avec photo de france et japon",
-                linkUrl:
-                    "https://www.loom.com/share/a0f5d58025684843b652742860f57516?sid=9314f83c-6fc6-4196-b504-fad3125006a2",
+                title: "Site du location d'hébergement",
+                imageUrl: "img/kasa.webp",
+                imageAlt: "site avec photo d'hébergement ",
+                linkUrl: "https://kasa-p11-55sfv5m0w-sfv2010.vercel.app/",
             },
+
             {
                 title: "Site du café",
                 imageUrl: "img/sayacafe.webp",
@@ -33,15 +33,22 @@ document.addEventListener("DOMContentLoaded", function () {
                 imageAlt: "site avec photo de plat",
                 linkUrl: "https://sfv2010.github.io/Projet3-ohmyfood/",
             },
-        ],
-        jp: [
             {
-                title: "フランス語と日本語の交換サイト",
+                title: "Site d'échange de cours de français et de japonais",
                 imageUrl: "img/bubble.webp",
-                imageAlt: "フランスと日本の写真付きサイト",
+                imageAlt: "site avec photo de france et japon",
                 linkUrl:
                     "https://www.loom.com/share/a0f5d58025684843b652742860f57516?sid=9314f83c-6fc6-4196-b504-fad3125006a2",
             },
+        ],
+        jp: [
+            {
+                title: "宿泊施設予約サイト",
+                imageUrl: "img/kasa.webp",
+                imageAlt: "宿泊施設の写真付きサイト",
+                linkUrl: "https://kasa-p11-55sfv5m0w-sfv2010.vercel.app/",
+            },
+
             {
                 title: "カフェのサイト",
                 imageUrl: "img/sayacafe.webp",
@@ -59,6 +66,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 imageUrl: "img/ohmy.webp",
                 imageAlt: "料理の写真付きサイト",
                 linkUrl: "https://sfv2010.github.io/Projet3-ohmyfood/",
+            },
+            {
+                title: "フランス語と日本語の交換サイト",
+                imageUrl: "img/bubble.webp",
+                imageAlt: "フランスと日本の写真付きサイト",
+                linkUrl:
+                    "https://www.loom.com/share/a0f5d58025684843b652742860f57516?sid=9314f83c-6fc6-4196-b504-fad3125006a2",
             },
         ],
     };

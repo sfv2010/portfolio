@@ -1061,6 +1061,7 @@ img {
 @media screen and (min-width: 960px) {
   .about__p {
     text-align: left;
+    padding-top: 20px;
   }
 }
 .about__btn {
