@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 imageUrl: "img/bubble.webp",
                 imageAlt: "site avec photo de france et japon",
                 linkUrl:
-                    "https://www.loom.com/share/a0f5d58025684843b652742860f57516?sid=9314f83c-6fc6-4196-b504-fad3125006a2",
+                    "https://www.loom.com/share/b482f0cfe1104766adaa8103daad4972?sid=839b0ca0-f5a6-434f-b5cd-ead875991f1b",
             },
         ],
         jp: [
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 imageUrl: "img/bubble.webp",
                 imageAlt: "フランスと日本の写真付きサイト",
                 linkUrl:
-                    "https://www.loom.com/share/a0f5d58025684843b652742860f57516?sid=9314f83c-6fc6-4196-b504-fad3125006a2",
+                    "https://www.loom.com/share/b482f0cfe1104766adaa8103daad4972?sid=839b0ca0-f5a6-434f-b5cd-ead875991f1b",
             },
         ],
     };

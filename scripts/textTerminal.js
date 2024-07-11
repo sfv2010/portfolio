@@ -34,7 +34,7 @@ const nameElement = document.querySelector(".textAnimationName");
 const textElement = document.querySelector(".textAnimation");
 
 // アニメーションテキスト
-const nameText = "Sayaka VINCENT";
+const nameText = "Sayaka DEV";
 const text = "Développeuse Web";
 
 // Sayaka VINCENTのアニメーションを開始し、完了後にDéveloppeuse Webのアニメーションを開始
