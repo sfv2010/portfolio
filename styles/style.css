@@ -282,7 +282,7 @@ body {
   transform: scale(1, 1); /*ホバー後、x軸方向に1（相対値）伸長*/
 }
 .header__btn {
-  margin-left: 20px;
+  margin-left: 25px;
 }
 .header__a {
   font-size: 14px;
