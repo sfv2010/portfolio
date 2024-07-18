@@ -239,6 +239,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
 }
 .header__logo {
   width: 80px;
@@ -246,6 +247,7 @@ body {
 }
 .header__nav {
   display: none;
+  height: 100%;
 }
 @media screen and (min-width: 960px) {
   .header__nav {
@@ -283,12 +285,15 @@ body {
 }
 .header__btn {
   margin-left: 25px;
+  display: flex;
+  align-items: center;
 }
 .header__a {
   font-size: 14px;
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
   border: 1px solid black;
+  margin: 0 !important;
 }
 
 .header__menuOpen #container {

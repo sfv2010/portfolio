@@ -14,6 +14,7 @@
         justify-content: space-between;
         @extend .content-width;
         align-items: center;
+        height: 100%;
     }
     &__logo {
         width: 80px;
@@ -25,6 +26,7 @@
             display: flex;
             justify-content: space-between;
         }
+        height: 100%;
     }
     &__ul {
         display: flex;
@@ -58,12 +60,15 @@
     }
     &__btn {
         margin-left: 25px;
+        display: flex;
+        align-items: center;
     }
     &__a {
         font-size: 14px;
         display: inline-block;
         font-family: Arial, Helvetica, sans-serif;
         border: 1px solid $cBlack;
+        margin: 0 !important;
     }
 }
 
