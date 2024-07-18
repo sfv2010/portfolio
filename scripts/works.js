@@ -9,19 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const items = {
         fr: [
             {
-                title: "Site du location d'hébergement",
-                imageUrl: "img/kasa.webp",
-                imageAlt: "site avec photo d'hébergement ",
-                linkUrl: "https://kasa-p11-55sfv5m0w-sfv2010.vercel.app/",
-            },
-
-            {
-                title: "Site du café",
-                imageUrl: "img/sayacafe.webp",
-                imageAlt: "site avec photo de café",
-                linkUrl: "https://sfv2010.github.io/site_sayacafe/",
-            },
-            {
                 title: "Application de gestion des employés",
                 imageUrl: "img/HRnet.webp",
                 imageAlt: "site avec formulaire",
@@ -34,27 +21,26 @@ document.addEventListener("DOMContentLoaded", function () {
                 linkUrl: "https://sfv2010.github.io/Projet3-ohmyfood/",
             },
             {
+                title: "Site du café",
+                imageUrl: "img/sayacafe.webp",
+                imageAlt: "site avec photo de café",
+                linkUrl: "https://sfv2010.github.io/site_sayacafe/",
+            },
+            {
                 title: "Site d'échange de cours de français et de japonais",
                 imageUrl: "img/bubble.webp",
                 imageAlt: "site avec photo de france et japon",
                 linkUrl:
                     "https://www.loom.com/share/b482f0cfe1104766adaa8103daad4972?sid=839b0ca0-f5a6-434f-b5cd-ead875991f1b",
             },
-        ],
-        jp: [
             {
-                title: "宿泊施設予約サイト",
+                title: "Site du location d'hébergement",
                 imageUrl: "img/kasa.webp",
-                imageAlt: "宿泊施設の写真付きサイト",
+                imageAlt: "site avec photo d'hébergement ",
                 linkUrl: "https://kasa-p11-55sfv5m0w-sfv2010.vercel.app/",
             },
-
-            {
-                title: "カフェのサイト",
-                imageUrl: "img/sayacafe.webp",
-                imageAlt: "カフェの写真付きサイト",
-                linkUrl: "https://sfv2010.github.io/site_sayacafe/",
-            },
+        ],
+        jp: [
             {
                 title: "従業員管理アプリケーション",
                 imageUrl: "img/HRnet.webp",
@@ -68,11 +54,24 @@ document.addEventListener("DOMContentLoaded", function () {
                 linkUrl: "https://sfv2010.github.io/Projet3-ohmyfood/",
             },
             {
+                title: "カフェのサイト",
+                imageUrl: "img/sayacafe.webp",
+                imageAlt: "カフェの写真付きサイト",
+                linkUrl: "https://sfv2010.github.io/site_sayacafe/",
+            },
+            {
                 title: "フランス語と日本語の交換サイト",
                 imageUrl: "img/bubble.webp",
                 imageAlt: "フランスと日本の写真付きサイト",
                 linkUrl:
                     "https://www.loom.com/share/b482f0cfe1104766adaa8103daad4972?sid=839b0ca0-f5a6-434f-b5cd-ead875991f1b",
+            },
+
+            {
+                title: "宿泊施設予約サイト",
+                imageUrl: "img/kasa.webp",
+                imageAlt: "宿泊施設の写真付きサイト",
+                linkUrl: "https://kasa-p11-55sfv5m0w-sfv2010.vercel.app/",
             },
         ],
     };
@@ -80,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const selectedItems = items[language] || items["fr"]; // 言語が無い場合、デフォルトはフランス語
 
     selectedItems.forEach((item) => {
-        const worksItem = document.createElement("div");
+        const worksItem = document.createElement("li");
         worksItem.classList.add("works__item");
 
         const coverSlide = document.createElement("div");

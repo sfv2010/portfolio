@@ -2,7 +2,7 @@
 
 .coverSlide {
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
 
     &::after {
         content: "";
@@ -57,6 +57,6 @@ img {
         border-radius: 1%;
     }
     &:hover::before {
-        background-color: rgba(138, 135, 135, 0.4);
+        background-color: rgba($cWhite, 0.3);
     }
 }

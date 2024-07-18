@@ -476,7 +476,6 @@ body {
 
 .coverSlide {
   position: relative;
-  overflow: hidden;
 }
 .coverSlide::after {
   content: "";
@@ -536,7 +535,7 @@ img {
   border-radius: 1%;
 }
 .hoverDarken:hover::before {
-  background-color: rgba(138, 135, 135, 0.4);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .animate-title,
@@ -820,7 +819,7 @@ img {
 .contact__label {
   text-align: left;
   width: 100px;
-  margin: 5px 0;
+  margin: 10px 0;
   border-left: 3px solid #884898;
   padding-left: 10px;
 }
