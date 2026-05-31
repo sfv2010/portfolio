@@ -117,7 +117,7 @@
         background-color: $cBgGray;
         padding: 15px;
         @include mq(md) {
-            padding: 50px;
+            padding: 80px 50px 70px;
         }
 
         // @include mq(xl) {
@@ -154,7 +154,7 @@
         }
     }
     &__btn {
-        margin-top: 40px;
+        margin-top: 0px;
     }
     &__a {
         display: inline-block;
